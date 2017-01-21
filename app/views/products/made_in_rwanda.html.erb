@@ -1,0 +1,18 @@
+<h1>Enjoy Made In Rwanda Product</h1>
+
+<table>
+<tr>
+	<th>Name</th>
+	<th>Price</th>
+	<th>Description</th>
+	<th>Image</th>
+</tr>
+<% @product.each do |product| %>
+<tr>
+	<td> <%= product.name %></td>
+	<td> <%= product.price%></td>
+	<td> <%= product.description %></td>
+	<td><img src="<%= product.image %>"> </td>
+</tr>
+<% end %>
+</table>
