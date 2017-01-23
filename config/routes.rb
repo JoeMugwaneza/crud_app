@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
-get '/home', to: "products#made_in_rwanda"
+get "/products", to: 'products#index'
+get "/products/new", to: 'products#new'
+get "/products/:id", to: 'products#show'
 
-get '/one_product', to: "products#single_product"
+post "/products", to: 'products#create'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
